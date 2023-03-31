@@ -5,38 +5,51 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  /* border: 1px solid blue; */
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  height: 2rem;
+  width: 20rem;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 1rem 1rem 0;
+  padding: 0 1rem;
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input:focus {
+  border: 2px solid blue;
 }
 
-.card {
-  padding: 2em;
+button {
+  outline: none;
+  width: 6rem;
+  height: 2.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: bold;
+  background-color: blue;
+  color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.todos-container {
+  max-width: 35rem;
+  /* word-wrap: break-word; */
+  padding: 0 5rem;
+  color: #888585;
+  font-size: 1.1rem;
+}
+
+.task {
+  background-color: #ededfd;
+  border-radius: 5px;
+  max-width: inherit;
+  padding: 0.6rem 4rem 0.6rem 1rem;
+  text-align: left;
 }
